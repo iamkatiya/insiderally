@@ -1,0 +1,200 @@
+
+@font-face {
+  font-family: 'AvenirNextCyr-Light';
+  src: url('../fonts/AvenirNextCyr-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvenirNextCyr-HeavyItalic';
+  src: url('../fonts/AvenirNextCyr-HeavyItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nextart_thin';
+  src: url('../fonts/nextart_thin.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nextart_bold';
+  src: url('../fonts/nextart_bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo-Italic';
+  src: url('../fonts/Exo-Italic.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Exo-Thin';
+  src: url('../fonts/Exo-Thin.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.heading {
+  &-small {
+    font-family: AvenirNextCyr-Light;
+    font-style: italic;
+    opacity: .9;
+    font-size: 14px;
+
+    color: #FFFFFF;
+  }
+
+  &-thin {
+    font-family: nextart_thin;
+    font-size: 30px;
+    color: #FFFFFF;
+    &_small
+    {
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+  }
+
+  &-large {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    font-family: AvenirNextCyr-HeavyItalic;
+    font-size: 150px;
+    line-height: 101%;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.2);
+  }
+  &-button {
+    font-family: AvenirNextCyr-HeavyItalic;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: relative;
+  }
+  &-counts {
+    font-family: AvenirNextCyr-HeavyItalic;
+    font-size: 72px;
+    color: #FFFFFF;
+
+  }
+
+  &-logo {
+    font-family: Exo-Italic;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 31px;
+    color: #FFFFFF;
+    display: inline-block;
+  }
+  &-fat
+  {
+    font-family: nextart_bold;
+    font-size: 72px;
+    color: #FFFFFF;
+  }
+}
+.title
+{
+  font-family: nextart_bold;
+  text-align: center;
+  font-size: 72px;
+  color: #000000;
+  &_mini
+  {
+    font-size: 18px;
+    text-align: center;
+    color: rgba(24, 24, 24, 0.5);
+    margin-top: -25px;
+    &_white
+    {
+      font-family: nextart_thin;
+      text-align: left;
+      color: #FFFFFF;
+      margin-bottom: 100px;
+    }
+  }
+  &_white
+  {
+    font-family: nextart_bold;
+    text-align: left;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: relative;
+
+  }
+}
+.way
+{
+  font-family: nextart_bold;
+  font-size: 36px;
+  letter-spacing: 0.2em;
+  color: #000000;
+  &_mini
+  {
+    font-family: nextart_thin;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    color: rgba(24, 24, 24, 0.5);
+    font-weight: 900;
+  }
+
+}
+.way_description
+{
+  font-family: Exo-Thin;
+  font-size: 16px;
+  color: rgba(24, 24, 24, 0.5);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 106%;
+}
+.button_go_on
+{
+  font-family: nextart_bold;
+  font-size: 16px;
+  line-height: 101%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #181818;
+  justify-content: center;
+  padding-top: 12px;
+}
+.button_go_on_big
+{
+  font-family: nextart_bold;
+  font-size: 30px;
+  line-height: 101%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding-top: 20px;
+
+}
+.footer
+{
+  &_text
+  {
+    font-family: nextart_bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+  }
+  &__description
+  {
+    font-family: Exo-Medium;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
