@@ -1,4 +1,10 @@
 
+.wrapper
+{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .for_head
 {
   max-width: 1500px;
@@ -14,7 +20,8 @@ img
 body
 {
   margin: 0px;
-  max-width: 1900px;
+  position: relative;
+  overflow-x: hidden;
 }
 .header__nav
 {
@@ -96,7 +103,7 @@ a
   &_arrow
   {
     width: 1px;
-    height: 125px;
+    height: 250px;
     background: #FFFFFF;
 
     -o-transform: rotate(-90deg);
@@ -181,6 +188,7 @@ a
     left: 700px;
     top: -250px;
   }
+
 }
 .block_second
 {
@@ -221,6 +229,15 @@ a
     border: 3px solid black;
     width: 220px;
     height: 45px;
+    transition: .6s;
+    &:hover
+    {
+      .button_go_on
+      {
+        color: #FFFFFF;
+      }
+      background-color: black;
+    }
   }
   &_maxi {
     align-items: center;
@@ -228,12 +245,21 @@ a
     border: 3px solid black;
     width: 389px;
     height: 82px;
+    transition: .6s;
+    &:hover
+    {
+      .button_go_on_big
+      {
+        color: #FFFFFF;
+      }
+      background-color: black;
+    }
 
   }
 }
 .partners
 {
-  margin-bottom: 270px;
+  margin-bottom: 170px;
 }
 .form_go_on
 {
@@ -305,6 +331,11 @@ a
     left: 600px;
     top: 30px;
   }
+  &_fourth
+  {
+    left: 30px;
+    top: -90px;
+  }
 }
 .vector
 {
@@ -329,5 +360,98 @@ a
     bottom: 430px;
     width: 850px;
     height: 900px;
+  }
+  &_fourth
+  {
+    left: -140px;
+    height: 650px;
+  }
+}
+.way_block
+{
+  width: 150%;
+}
+.title_right
+{
+  position: relative;
+
+  &::before
+  {
+    position: absolute;
+    content: "";
+    width: 600px;
+    height: 7px;
+    top: 50px;
+    left: -110px;
+    background: black;
+  }
+}
+.title_left
+{
+  position: relative;
+
+  &::before
+  {
+    position: absolute;
+    content: "";
+    width: 600px;
+    height: 7px;
+    top: 50px;
+    left: 650px;
+    background: black;
+  }
+}
+.friends
+{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  position: relative;
+}
+.dot
+{
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: .3s;
+  &:hover
+  {
+    background: white;
+  }
+}
+.block_dots
+{
+  position: relative;
+}
+.dots
+{
+  position: absolute;
+  left: 200px;
+  top:300px;
+}
+.scroll
+{
+  transition: 3s;
+}
+.car_photo
+{
+  position: relative;
+  &::before
+  {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 190px;
+    background-color: white;
+    &:hover
+    {
+      content: "";
+
+      height: 50px;
+      width: 100%;
+      top: 190px;
+      background-color: white;
+    }
   }
 }
