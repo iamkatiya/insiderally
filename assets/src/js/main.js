@@ -18,10 +18,11 @@
 //= ../../../node_modules/bootstrap/js/dist/tab.js
 //= ../../../node_modules/bootstrap/js/dist/toast.js
 
-
 //= ../../../node_modules/owl.carousel/dist/owl.carousel.js
 //= ../../../node_modules/slick-carousel/slick/slick.js
 //= ../../../node_modules/wowjs/dist/wow.js
 
 // Импортируем другие js-файлы
+//= modernizr.min.js
+//= jquery.gallery.js
 //= my.js
