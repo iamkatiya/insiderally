@@ -43,3 +43,13 @@ $(function (){
         }
     });
 });
+
+$(document).on('click', function(e) {
+    if(e.target.closest('.nav-link')) {
+        var navLink = e.target.closest('.nav-link').getAttribute("href");
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(navLink).offset().top
+        }, 2000);
+    }
+});

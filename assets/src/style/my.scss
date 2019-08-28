@@ -1,87 +1,86 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}
 
-.wrapper
-{
+
+
+.wrapper {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
-.for_head
-{
-  max-width: 1500px;
-  justify-content: center;
+
+.for_head {
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-img
-{
+
+img {
   width: 100%;
   height: 100%;
 }
-body
-{
-  margin: 0px;
+
+body {
+  margin: 0;
   position: relative;
   overflow-x: hidden;
 }
-.header__nav
-{
 
-  list-style: none;
-  justify-content: space-between;
-  display: flex;
-  padding: 0;
-  margin-top: 20px;
+.header {
+  background: url("../img/header.jpg") center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 0;
+  margin-bottom: 0;
+  &__nav {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
 
-}
-.header__nav-item
-{
-  position: relative;
-  overflow: hidden;
-  padding-right: 1px;
-
-  &::before
-  {
-    position: absolute;
-    top: 20px;
-    left: -100%;
-    width:100%;
-    height: 1px;
-    content: "";
-    background-color: #FFFFFF;
-    transition: .4s;
   }
-  &:hover
-  {
-    &::before
-    {
+  &__nav-item {
+    position: relative;
+    overflow: hidden;
+    padding-right: 1px;
+
+    &::before {
       position: absolute;
       top: 20px;
-      left: 0;
-      width:100%;
+      left: -100%;
+      width: 100%;
       height: 1px;
       content: "";
       background-color: #FFFFFF;
+      transition: .4s;
+    }
+    &:hover {
+      &::before {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        content: "";
+        background-color: #FFFFFF;
 
+      }
     }
   }
 }
-.header
-{
-  background: url("../img/header.jpg");
-  height: 1000px;
-  margin-top: 0;
-  margin-bottom: 0;
 
-}
-
-a
-{
+a {
   text-decoration: none;
-  &:hover
-  {
+  &:hover {
     color: #FFFFFF;
   }
 }
+
 .line {
   width: 300px;
   height: 1px;
@@ -100,8 +99,7 @@ a
     opacity: .7;
 
   }
-  &_arrow
-  {
+  &_arrow {
     width: 1px;
     height: 250px;
     background: #FFFFFF;
@@ -114,23 +112,22 @@ a
     margin-bottom: 100px;
     margin-top: 30px;
   }
-  &_bold
-  {
+  &_bold {
     width: 230px;
     height: 7px;
     background: #181818;
   }
 }
-.big_text_block
-{
+
+.big_text_block {
   position: relative;
 }
-.block_for_header_text
-{
+
+.block_for_header_text {
   margin-top: 150px;
 }
-.button_one
-{
+
+.button_one {
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -155,13 +152,13 @@ a
     }
   }
 }
-.description
-{
+
+.description {
   position: relative;
 
 }
-.block_cities
-{
+
+.block_cities {
 
   position: absolute;
   top: 150px;
@@ -169,8 +166,8 @@ a
   opacity: .7;
 
 }
-.city
-{
+
+.city {
 
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -179,49 +176,45 @@ a
   transform: rotate(-90deg);
 }
 
-.block_first
-{
+.block_first {
   position: relative;
-  &_card
-  {
+  &_card {
     position: relative;
     left: 700px;
     top: -250px;
   }
 
 }
-.block_second
-{
+
+.block_second {
   position: relative;
-  &_card
-  {
+  &_card {
     position: absolute;
     left: -370px;
   }
 }
-.block_third
-{
+
+.block_third {
   margin-top: 400px;
   position: relative;
-  &_card
-  {
+  &_card {
     position: relative;
     left: 700px;
     top: -250px;
 
   }
 }
-.block_finally
-{
+
+.block_finally {
   margin-bottom: 200px;
   margin-top: 400px;
 }
-.route
-{
+
+.route {
   margin-top: 100px;
 }
-.button
-{
+
+.button {
   &_mini {
     align-items: center;
     justify-content: center;
@@ -229,10 +222,8 @@ a
     width: 220px;
     height: 45px;
     transition: .6s;
-    &:hover
-    {
-      .button_go_on
-      {
+    &:hover {
+      .button_go_on {
         color: #FFFFFF;
       }
       background-color: black;
@@ -245,10 +236,8 @@ a
     width: 389px;
     height: 82px;
     transition: .6s;
-    &:hover
-    {
-      .button_go_on_big
-      {
+    &:hover {
+      .button_go_on_big {
         color: #FFFFFF;
       }
       background-color: black;
@@ -256,23 +245,23 @@ a
 
   }
 }
-.partners
-{
+
+.partners {
   margin-bottom: 170px;
 }
-.form_go_on
-{
+
+.form_go_on {
   margin-bottom: 200px;
 }
-.footer
-{
+
+.footer {
   background-color: black;
   height: 400px;
 }
-.footer_title{
+
+.footer_title {
   position: relative;
-  &::after
-  {
+  &::after {
     position: absolute;
     height: 8px;
     width: 100%;
@@ -282,100 +271,90 @@ a
     content: "";
   }
 }
-.footer_blocks
-{
+
+.footer_blocks {
   justify-content: space-between;
   display: flex;
   margin-top: 100px;
 }
-.logo
-{
+
+.logo {
   width: 189px;
 }
-.map
-{
+
+.map {
   position: relative;
   height: 750px;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  &_card
-  {
+  &_card {
     position: absolute;
-    top:-50px;
+    top: -50px;
 
   }
 
 }
-.round
-{
+
+.round {
   width: 40px;
   height: 40px;
   border: 1px solid black;
   box-sizing: border-box;
   border-radius: 50%;
   position: absolute;
-  &_first
-  {
+  &_first {
     left: 350px;
     top: 30px;
   }
-  &_second
-  {
+  &_second {
     left: -150px;
     top: 30px;
   }
-  &_third
-  {
+  &_third {
     left: 600px;
     top: 30px;
   }
-  &_fourth
-  {
+  &_fourth {
     left: 30px;
     top: -90px;
   }
 }
-.vector
-{
+
+.vector {
   position: absolute;
-  &_first
-  {
+  &_first {
     left: -220px;
     top: 50px;
     width: 1000px;
     height: 950px;
   }
-  &_second
-  {
+  &_second {
     left: -140px;
     width: 850px;
     height: 780px;
     top: 90px;
   }
-  &_third
-  {
+  &_third {
     left: -130px;
     bottom: 430px;
     width: 850px;
     height: 900px;
   }
-  &_fourth
-  {
+  &_fourth {
     left: -140px;
     height: 650px;
   }
 }
-.way_block
-{
+
+.way_block {
   width: 150%;
 }
-.title_right
-{
+
+.title_right {
   position: relative;
 
-  &::before
-  {
+  &::before {
     position: absolute;
     content: "";
     width: 600px;
@@ -385,12 +364,11 @@ a
     background: black;
   }
 }
-.title_left
-{
+
+.title_left {
   position: relative;
 
-  &::before
-  {
+  &::before {
     position: absolute;
     content: "";
     width: 600px;
@@ -400,40 +378,39 @@ a
     background: black;
   }
 }
-.friends
-{
+
+.friends {
   margin-top: 120px;
   margin-bottom: 120px;
   position: relative;
 }
-.dot
-{
+
+.dot {
   width: 15px;
   height: 15px;
   border: 1px solid white;
   border-radius: 50%;
   transition: .3s;
-  &:hover
-  {
+  &:hover {
     background: white;
   }
 }
-.block_dots
-{
+
+.block_dots {
   position: relative;
 }
-.dots
-{
+
+.dots {
   position: absolute;
   left: 200px;
-  top:300px;
+  top: 300px;
 }
-.scroll
-{
+
+.scroll {
   transition: 3s;
 }
-.buy_block
-{
+
+.buy_block {
 
   position: absolute;
   height: 60px;
@@ -443,19 +420,19 @@ a
   background-color: white;
   transition: .4s;
 }
+
 .car_photo:hover .buy_block {
-        top: 200px;
+  top: 200px;
   height: 60px;
   width: 349px;
   left: 0;
-    }
+}
 
-.car_photo
-{
+.car_photo {
   overflow: hidden;
 }
-.icon
-{
+
+.icon {
   width: 25px;
   height: 25px;
   margin-top: 200px;
