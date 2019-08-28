@@ -26,7 +26,7 @@ $('.new_items .next_prev_icons .carousel-control-prev-icon').click(function () {
 });
 $(function (){
     new WOW().init();
-    $('#dg-container').gallery();
+    $('.dg-container').gallery();
     $('.owl-photos').owlCarousel({
         loop: true,
         dots: true,
@@ -43,13 +43,6 @@ $(function (){
                 margin: 30,
             }
         }
-    });
-    $(".slider").slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        centerMode: true,
-        variableWidth: true
     });
 });
 

@@ -98,43 +98,43 @@
 			if( this.support3d && this.supportTrans ) {
 			
 				leftCSS 	= {
-					'-webkit-transform'	: 'translateX(-350px) translateY(50px) translateZ(-200px)',
-					'-moz-transform'	: 'translateX(-350px) translateY(50px) translateZ(-200px)',
-					'-o-transform'		: 'translateX(-350px) translateY(50px) translateZ(-200px)',
-					'-ms-transform'		: 'translateX(-350px) translateY(50px) translateZ(-200px)',
-					'transform'			: 'translateX(-350px) translateY(50px) translateZ(-200px)'
+					'-webkit-transform'	: 'translateX(-115px) translateY(50px) translateZ(-200px)',
+					'-moz-transform'	: 'translateX(-115px) translateY(50px) translateZ(-200px)',
+					'-o-transform'		: 'translateX(-115px) translateY(50px) translateZ(-200px)',
+					'-ms-transform'		: 'translateX(-115px) translateY(50px) translateZ(-200px)',
+					'transform'			: 'translateX(-115px) translateY(50px) translateZ(-200px)'
 				};
 				
 				rightCSS	= {
-					'-webkit-transform'	: 'translateX(350px) translateZ(-200px)',
-					'-moz-transform'	: 'translateX(350px) translateZ(-200px)',
-					'-o-transform'		: 'translateX(350px) translateZ(-200px)',
-					'-ms-transform'		: 'translateX(350px) translateZ(-200px)',
-					'transform'			: 'translateX(350px) translateZ(-200px)'
+					'-webkit-transform'	: 'translateX(115px) translateY(50px) translateZ(-200px)',
+					'-moz-transform'	: 'translateX(115px) translateY(50px) translateZ(-200px)',
+					'-o-transform'		: 'translateX(115px) translateY(50px) translateZ(-200px)',
+					'-ms-transform'		: 'translateX(115px) translateY(50px) translateZ(-200px)',
+					'transform'			: 'translateX(115px) translateY(50px) translateZ(-200px)'
 				};
 				
 				leftCSS.opacity		= 1;
 				leftCSS.visibility	= 'visible';
-				rightCSS.opacity	= 0;
-				rightCSS.visibility	= 'hidden';
+				rightCSS.opacity	= 1;
+				rightCSS.visibility	= 'visible';
 			
 			}
 			else if( this.support2d && this.supportTrans ) {
 				
 				leftCSS 	= {
-					'-webkit-transform'	: 'translate(-350px) scale(0.8)',
-					'-moz-transform'	: 'translate(-350px) scale(0.8)',
-					'-o-transform'		: 'translate(-350px) scale(0.8)',
-					'-ms-transform'		: 'translate(-350px) scale(0.8)',
-					'transform'			: 'translate(-350px) scale(0.8)'
+					'-webkit-transform'	: 'translate(-115px) scale(0.8)',
+					'-moz-transform'	: 'translate(-115px) scale(0.8)',
+					'-o-transform'		: 'translate(-115px) scale(0.8)',
+					'-ms-transform'		: 'translate(-115px) scale(0.8)',
+					'transform'			: 'translate(-115px) scale(0.8)'
 				};
 				
 				rightCSS	= {
-					'-webkit-transform'	: 'translate(350px) scale(0.8)',
-					'-moz-transform'	: 'translate(350px) scale(0.8)',
-					'-o-transform'		: 'translate(350px) scale(0.8)',
-					'-ms-transform'		: 'translate(350px) scale(0.8)',
-					'transform'			: 'translate(350px) scale(0.8)'
+					'-webkit-transform'	: 'translate(115px) scale(0.8)',
+					'-moz-transform'	: 'translate(115px) scale(0.8)',
+					'-o-transform'		: 'translate(115px) scale(0.8)',
+					'-ms-transform'		: 'translate(115px) scale(0.8)',
+					'transform'			: 'translate(115px) scale(0.8)'
 				};
 				
 				currentCSS	= {
@@ -143,8 +143,8 @@
 				
 				leftCSS.opacity		= 1;
 				leftCSS.visibility	= 'visible';
-				rightCSS.opacity	= 0;
-				rightCSS.visibility	= 'hidden';
+				rightCSS.opacity	= 1;
+				rightCSS.visibility	= 'visible';
 			
 			}
 			
@@ -234,46 +234,46 @@
 				switch( position ) {
 					case 'outleft':
 						return {
-							'-webkit-transform'	: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
-							'-moz-transform'	: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
-							'-o-transform'		: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
-							'-ms-transform'		: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
-							'transform'			: 'translateX(-450px) translateZ(-300px) rotateY(45deg)',
+							'-webkit-transform'	: 'translateX(-450px) translateZ(-300px)',
+							'-moz-transform'	: 'translateX(-450px) translateZ(-300px)',
+							'-o-transform'		: 'translateX(-450px) translateZ(-300px)',
+							'-ms-transform'		: 'translateX(-450px) translateZ(-300px)',
+							'transform'			: 'translateX(-450px) translateZ(-300px)',
 							'opacity'			: 0,
 							'visibility'		: 'hidden'
 						};
 						break;
 					case 'outright':
 						return {
-							'-webkit-transform'	: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
-							'-moz-transform'	: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
-							'-o-transform'		: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
-							'-ms-transform'		: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
-							'transform'			: 'translateX(450px) translateZ(-300px) rotateY(-45deg)',
+							'-webkit-transform'	: 'translateX(450px) translateZ(-300px)',
+							'-moz-transform'	: 'translateX(450px) translateZ(-300px)',
+							'-o-transform'		: 'translateX(450px) translateZ(-300px)',
+							'-ms-transform'		: 'translateX(450px) translateZ(-300px)',
+							'transform'			: 'translateX(450px) translateZ(-300px)',
 							'opacity'			: 0,
 							'visibility'		: 'hidden'
 						};
 						break;
 					case 'left':
 						return {
-							'-webkit-transform'	: 'translateX(-350px) translateY(50px) translateZ(-200px)',
-							'-moz-transform'	: 'translateX(-350px) translateY(50px) translateZ(-200px)',
-							'-o-transform'		: 'translateX(-350px) translateY(50px) translateZ(-200px)',
-							'-ms-transform'		: 'translateX(-350px) translateY(50px) translateZ(-200px)',
-							'transform'			: 'translateX(-350px) translateY(50px) translateZ(-200px)',
+							'-webkit-transform'	: 'translateX(-115px) translateY(50px) translateZ(-200px)',
+							'-moz-transform'	: 'translateX(-115px) translateY(50px) translateZ(-200px)',
+							'-o-transform'		: 'translateX(-115px) translateY(50px) translateZ(-200px)',
+							'-ms-transform'		: 'translateX(-115px) translateY(50px) translateZ(-200px)',
+							'transform'			: 'translateX(-115px) translateY(50px) translateZ(-200px)',
 							'opacity'			: 1,
 							'visibility'		: 'visible'
 						};
 						break;
 					case 'right':
 						return {
-							'-webkit-transform'	: 'translateX(350px) translateZ(-200px)',
-							'-moz-transform'	: 'translateX(350px) translateZ(-200px)',
-							'-o-transform'		: 'translateX(350px) translateZ(-200px)',
-							'-ms-transform'		: 'translateX(350px) translateZ(-200px)',
-							'transform'			: 'translateX(350px) translateZ(-200px)',
-							'opacity'			: 0,
-							'visibility'		: 'hidden'
+							'-webkit-transform'	: 'translateX(115px) translateY(50px) translateZ(-200px)',
+							'-moz-transform'	: 'translateX(115px) translateY(50px) translateZ(-200px)',
+							'-o-transform'		: 'translateX(115px) translateY(50px) translateZ(-200px)',
+							'-ms-transform'		: 'translateX(115px) translateY(50px) translateZ(-200px)',
+							'transform'			: 'translateX(115px) translateY(50px) translateZ(-200px)',
+							'opacity'			: 1,
+							'visibility'		: 'visible'
 						};
 						break;
 					case 'center':
@@ -317,22 +317,22 @@
 						break;
 					case 'left':
 						return {
-							'-webkit-transform'	: 'translate(-350px) scale(0.8)',
-							'-moz-transform'	: 'translate(-350px) scale(0.8)',
-							'-o-transform'		: 'translate(-350px) scale(0.8)',
-							'-ms-transform'		: 'translate(-350px) scale(0.8)',
-							'transform'			: 'translate(-350px) scale(0.8)',
+							'-webkit-transform'	: 'translate(-115px) scale(0.8)',
+							'-moz-transform'	: 'translate(-115px) scale(0.8)',
+							'-o-transform'		: 'translate(-115px) scale(0.8)',
+							'-ms-transform'		: 'translate(-115px) scale(0.8)',
+							'transform'			: 'translate(-115px) scale(0.8)',
 							'opacity'			: 1,
 							'visibility'		: 'visible'
 						};
 						break;
 					case 'right':
 						return {
-							'-webkit-transform'	: 'translate(350px) scale(0.8)',
-							'-moz-transform'	: 'translate(350px) scale(0.8)',
-							'-o-transform'		: 'translate(350px) scale(0.8)',
-							'-ms-transform'		: 'translate(350px) scale(0.8)',
-							'transform'			: 'translate(350px) scale(0.8)',
+							'-webkit-transform'	: 'translate(115px) scale(0.8)',
+							'-moz-transform'	: 'translate(115px) scale(0.8)',
+							'-o-transform'		: 'translate(115px) scale(0.8)',
+							'-ms-transform'		: 'translate(115px) scale(0.8)',
+							'transform'			: 'translate(115px) scale(0.8)',
 							'opacity'			: 1,
 							'visibility'		: 'visible'
 						};
