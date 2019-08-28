@@ -4,8 +4,20 @@
   }
 }
 
-
-
+.navigation-block
+{
+  width: 100%;
+  display: flex;
+}
+.header-text-block
+{
+  width: 100%;
+}
+.header-bottom
+{
+  width: 100%;
+  height: 200px;
+}
 .wrapper {
   width: 100%;
   max-width: 1920px;
@@ -161,7 +173,7 @@ a {
 .block_cities {
 
   position: absolute;
-  top: 150px;
+  top: 250px;
   left: 20px;
   opacity: .7;
 
@@ -176,75 +188,6 @@ a {
   transform: rotate(-90deg);
 }
 
-.block_first {
-  position: relative;
-  &_card {
-    position: relative;
-    left: 700px;
-    top: -250px;
-  }
-
-}
-
-.block_second {
-  position: relative;
-  &_card {
-    position: absolute;
-    left: -370px;
-  }
-}
-
-.block_third {
-  margin-top: 400px;
-  position: relative;
-  &_card {
-    position: relative;
-    left: 700px;
-    top: -250px;
-
-  }
-}
-
-.block_finally {
-  margin-bottom: 200px;
-  margin-top: 400px;
-}
-
-.route {
-  margin-top: 100px;
-}
-
-.button {
-  &_mini {
-    align-items: center;
-    justify-content: center;
-    border: 3px solid black;
-    width: 220px;
-    height: 45px;
-    transition: .6s;
-    &:hover {
-      .button_go_on {
-        color: #FFFFFF;
-      }
-      background-color: black;
-    }
-  }
-  &_maxi {
-    align-items: center;
-    justify-content: center;
-    border: 3px solid black;
-    width: 389px;
-    height: 82px;
-    transition: .6s;
-    &:hover {
-      .button_go_on_big {
-        color: #FFFFFF;
-      }
-      background-color: black;
-    }
-
-  }
-}
 
 .partners {
   margin-bottom: 170px;
@@ -296,60 +239,6 @@ a {
 
 }
 
-.round {
-  width: 40px;
-  height: 40px;
-  border: 1px solid black;
-  box-sizing: border-box;
-  border-radius: 50%;
-  position: absolute;
-  &_first {
-    left: 350px;
-    top: 30px;
-  }
-  &_second {
-    left: -150px;
-    top: 30px;
-  }
-  &_third {
-    left: 600px;
-    top: 30px;
-  }
-  &_fourth {
-    left: 30px;
-    top: -90px;
-  }
-}
-
-.vector {
-  position: absolute;
-  &_first {
-    left: -220px;
-    top: 50px;
-    width: 1000px;
-    height: 950px;
-  }
-  &_second {
-    left: -140px;
-    width: 850px;
-    height: 780px;
-    top: 90px;
-  }
-  &_third {
-    left: -130px;
-    bottom: 430px;
-    width: 850px;
-    height: 900px;
-  }
-  &_fourth {
-    left: -140px;
-    height: 650px;
-  }
-}
-
-.way_block {
-  width: 150%;
-}
 
 .title_right {
   position: relative;
@@ -402,7 +291,7 @@ a {
 
 .dots {
   position: absolute;
-  left: 200px;
+  left: 1700px;
   top: 300px;
 }
 
