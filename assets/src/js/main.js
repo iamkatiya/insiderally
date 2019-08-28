@@ -18,5 +18,8 @@
 //= ../../../node_modules/bootstrap/js/dist/tab.js
 //= ../../../node_modules/bootstrap/js/dist/toast.js
 
+
+//= ../../../node_modules/owl.carousel/dist/owl.carousel.js
+
 // Импортируем другие js-файлы
 //= my.js

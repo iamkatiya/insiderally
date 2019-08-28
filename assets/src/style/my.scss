@@ -195,9 +195,8 @@ a
   position: relative;
   &_card
   {
-    position: relative;
-    left: 10px;
-    top: -2700px;
+    position: absolute;
+    left: -370px;
   }
 }
 .block_third
@@ -433,25 +432,31 @@ a
 {
   transition: 3s;
 }
+.buy_block
+{
+
+  position: absolute;
+  height: 60px;
+  width: 0px;
+  top: 200px;
+  left: 0;
+  background-color: white;
+  transition: .4s;
+}
+.car_photo:hover .buy_block {
+        top: 200px;
+  height: 60px;
+  width: 349px;
+  left: 0;
+    }
+
 .car_photo
 {
-  position: relative;
-  &::before
-  {
-    content: "";
-    position: absolute;
-    height: 50px;
-    width: 100%;
-    top: 190px;
-    background-color: white;
-    &:hover
-    {
-      content: "";
-
-      height: 50px;
-      width: 100%;
-      top: 190px;
-      background-color: white;
-    }
-  }
+  overflow: hidden;
+}
+.icon
+{
+  width: 25px;
+  height: 25px;
+  margin-top: 200px;
 }

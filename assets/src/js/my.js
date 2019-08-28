@@ -1,9 +1,9 @@
 if ($('.owl-photos')) {
     var carouselFirst = $('.owl-photos').owlCarousel({
         loop: true,
-        mouseDrag: false,
-        dots: false,
-        nav: false,
+        mouseDrag: true,
+        dots: true,
+        nav: true,
         responsive: {
             0: {
                 items: 1
@@ -12,7 +12,7 @@ if ($('.owl-photos')) {
                 items: 3
             },
             1000: {
-                items: 4,
+                items: 5,
                 margin: 30,
             }
         }
@@ -27,8 +27,8 @@ $('.new_items .next_prev_icons .carousel-control-prev-icon').click(function () {
 $(function (){
     $('.owl-photos').owlCarousel({
         loop: true,
-        dots: false,
-        nav: false,
+        dots: true,
+        nav: true,
         responsive: {
             0: {
                 items: 1
@@ -37,7 +37,7 @@ $(function (){
                 items: 3
             },
             1000: {
-                items: 4,
+                items: 5,
                 margin: 30,
             }
         }
