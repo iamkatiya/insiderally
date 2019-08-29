@@ -453,9 +453,7 @@ li:before {
   }
 }
 
-.gallery img {
 
-}
 
 .button_maxi button {
   align-items: center;
@@ -471,6 +469,20 @@ li:before {
     }
     background-color: black;
 
+  }
+}
+
+.menu {
+  .heading-logo {
+    display: none;
+  }
+  .bottom-mob-menu {
+    display: none;
+  }
+  .heading-small {
+    b {
+      display: none;
+    }
   }
 }
 
