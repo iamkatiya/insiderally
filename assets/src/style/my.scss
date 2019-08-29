@@ -53,6 +53,7 @@ body {
   background: url("../img/header.jpg") center center;
   -webkit-background-size: cover;
   background-size: cover;
+  height: 937px;
   margin-top: 0;
   margin-bottom: 0;
   &__nav {
@@ -167,6 +168,9 @@ a {
       content: "";
       background-color: #FFFFFF;
     }
+  }
+  a:hover {
+    text-decoration: none;
   }
 }
 
@@ -450,6 +454,9 @@ li:before {
   justify-content: center;
   margin-top: 3em;
 
+  &.disabled {
+    display: none !important;
+  }
   .owl-dot {
     width: 175px;
     height: 6px;

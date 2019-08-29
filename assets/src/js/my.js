@@ -3,17 +3,18 @@ if ($('.owl-photos')) {
         loop: true,
         mouseDrag: true,
         dots: true,
-        nav: true,
+        nav: false,
         responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
+            200: {
+                items: 2,
+                center: true,
+                dots: true,
+                loop: true
             },
             1000: {
                 items: 5,
                 margin: 30,
+                dots: false,
             }
         }
     });
@@ -27,23 +28,6 @@ $('.new_items .next_prev_icons .carousel-control-prev-icon').click(function () {
 $(function (){
     new WOW().init();
     $('.dg-container').gallery();
-    $('.owl-photos').owlCarousel({
-        loop: true,
-        dots: true,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5,
-                margin: 30,
-            }
-        }
-    });
 });
 
 $(document).on('click', function(e) {
