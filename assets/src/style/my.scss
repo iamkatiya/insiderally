@@ -3,29 +3,29 @@
     max-width: 1500px;
   }
 }
-video
-{
+
+video {
   width: 100%;
   height: 100%;
 }
 
-.navigation-block
-{
+.navigation-block {
   width: 100%;
   display: flex;
   height: 10%;
 }
-.header-text-block
-{
+
+.header-text-block {
   width: 100%;
 }
-.header-bottom
-{
+
+.header-bottom {
   width: 100%;
   height: 20%;
   margin-bottom: 20vh;
   position: sticky;
 }
+
 .wrapper {
   width: 100%;
   max-width: 1920px;
@@ -198,7 +198,6 @@ a {
   transform: rotate(-90deg);
 }
 
-
 .partners {
   margin-bottom: 170px;
 }
@@ -236,22 +235,13 @@ a {
 }
 
 .map {
-
-  position: relative;
-  width: 1330px;
-  height: 750px;
-  margin-left: auto;
-  margin-right: auto;
   &_card {
-    position: absolute;
+    position: relative;
     top: -50px;
     width: 100%;
     height: 100%;
-
   }
-
 }
-
 
 .title_right {
   position: relative;
@@ -313,36 +303,24 @@ a {
 .buy_block {
 
   position: absolute;
-  height: 35%;
   width: 100%;
-  left: -100%;
-  top: 80%;
+  left: 0;
+  bottom: -101%;
   background-color: white;
-  transition: .4s;
+  align-items: center;
+  transition: .4s ease-in-out;
 }
 
 .car_photo:hover .buy_block {
-  top: 80%;
-  left: 0;
-  height: 35%;
-  width: 100%;
-  align-items: center;
+  bottom: 0;
 }
-.car_photo:hover .car_name {
-
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  left: 0;
-}
-
 
 .car_photo {
   overflow: hidden;
   width: 100%;
   height: 100%;
   position: relative;
-  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
 .icon {
@@ -350,16 +328,18 @@ a {
   height: 25px;
   margin-top: 200px;
 }
+
 .icon img {
   width: 25px;
   height: 25px;
   margin-top: 100px;
 }
-.modal-content
-{
+
+.modal-content {
   width: 672px;
   height: 72em;
 }
+
 .login {
   font-size: 21px;
   width: 100%;
@@ -395,7 +375,7 @@ a {
 }
 
 /*Outer box of the fake checkbox*/
-.checkbox label::before{
+.checkbox label::before {
   height: 20px;
   width: 20px;
 
@@ -431,25 +411,28 @@ a {
 .checkbox input[type="checkbox"]:focus + label::before {
   outline: rgb(59, 153, 252) auto 5px;
 }
-ul
-{
+
+ul {
   padding: 0;
 }
+
 li {
   display: flex;
   list-style-type: none; /* Убираем маркеры у списка */
 }
+
 li:before {
   content: "-"; /* Добавляем в качестве маркера символ */
 }
-.close
-{
+
+.close {
   margin-left: 600px;
   margin-top: 20px;
   color: black;
 }
+
 .owl-dots {
-  display: flex!important;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   margin-top: 3em;
@@ -460,44 +443,42 @@ li:before {
   .owl-dot {
     width: 175px;
     height: 6px;
-    background: rgba(24, 24, 24, 0.3)!important;
+    background: rgba(24, 24, 24, 0.3) !important;
 
     margin: 0 7.5px;
 
-
     &.active {
-      background: #3f3e3e!important;
+      background: #3f3e3e !important;
     }
   }
 }
-.gallery img
-{
+
+.gallery img {
 
 }
-.button_maxi button
-{
-    align-items: center;
-    justify-content: center;
-    border: 3px solid black;
-    transition: .6s;
-    padding: 18px;
-    background: white;
 
-    &:hover {
-      .button_go_on_big {
-        color: #FFFFFF;
-      }
-      background-color: black;
+.button_maxi button {
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  transition: .6s;
+  padding: 18px;
+  background: white;
+
+  &:hover {
+    .button_go_on_big {
+      color: #FFFFFF;
+    }
+    background-color: black;
 
   }
 }
-.button_maxi:hover .button_go_on_big
-{
+
+.button_maxi:hover .button_go_on_big {
   color: #FFFFFF;
 }
 
-.button_mini button
-{
+.button_mini button {
   align-items: center;
   justify-content: center;
   border: 3px solid black;
@@ -513,7 +494,7 @@ li:before {
 
   }
 }
-.button_mini:hover .button_go_on
-{
+
+.button_mini:hover .button_go_on {
   color: #FFFFFF;
 }

@@ -236,17 +236,14 @@ a.but:hover {
 }
 .car_name
 {
-  font-family: nextart_bold;
+  font-family: "nextart_bold", serif;
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0.05em;
   color: #000;
+  padding: 10px 0;
   text-align: center;
-  left: -100%;
-  position: absolute;
-  top: 85%;
   transition: .4s;
-
 }
 
 .footer
