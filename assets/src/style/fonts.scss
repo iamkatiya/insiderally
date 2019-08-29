@@ -49,6 +49,7 @@
 
   &-thin {
     font-family: nextart_thin;
+    word-wrap: normal;
     font-size: 30px;
     color: #FFFFFF;
     &_small
@@ -92,6 +93,7 @@
   &-fat
   {
     font-family: nextart_bold;
+    word-wrap: normal;
     font-size: 72px;
     color: #FFFFFF;
   }
@@ -100,8 +102,19 @@
 {
   font-family: nextart_bold;
   text-align: center;
+  word-wrap: normal;
   font-size: 72px;
   color: #000000;
+  margin-top: 150px;
+  &_modal
+  {
+    font-size: 36px;
+    letter-spacing: 0.15em;
+    font-family: nextart_bold;
+    text-align: center;
+    word-wrap: normal;
+    color: #000000;
+  }
   &_mini
   {
     font-size: 18px;
@@ -170,11 +183,34 @@ a.but:hover {
   line-height: 101%;
   display: flex;
   align-items: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
   color: #181818;
   justify-content: center;
   padding-top: 12px;
   transition: .6s;
+}
+.form_registr
+{
+  font-family: nextart_bold;
+  font-size: 16px;
+  line-height: 101%;
+  display: flex;
+  letter-spacing: 0.15em;
+  color: #181818;
+  justify-content: left;
+  padding-top: 12px;
+  transition: .6s;
+
+  &_mini
+  {
+    font-family: AvenirNextCyr-Light;
+    font-size: 15px;
+    line-height: 101%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+    color: black;
+  }
 }
 .button_go_on_big
 {
@@ -197,6 +233,20 @@ a.but:hover {
   letter-spacing: 0.05em;
   color: #000;
   text-align: center;
+}
+.car_name
+{
+  font-family: nextart_bold;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  color: #000;
+  text-align: center;
+  left: -100%;
+  position: absolute;
+  top: 85%;
+  transition: .4s;
+
 }
 
 .footer
