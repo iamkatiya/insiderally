@@ -36,38 +36,6 @@
   margin-top: 100px;
 }
 
-.button {
-  &_mini {
-    align-items: center;
-    justify-content: center;
-    border: 3px solid black;
-    width: 220px;
-    height: 45px;
-    transition: .6s;
-    &:hover {
-      .button_go_on {
-        color: #FFFFFF;
-        letter-spacing: 0.15em;
-      }
-      background-color: black;
-    }
-  }
-  &_maxi {
-    align-items: center;
-    justify-content: center;
-    border: 3px solid black;
-    width: 389px;
-    height: 82px;
-    transition: .6s;
-    &:hover {
-      .button_go_on_big {
-        color: #FFFFFF;
-      }
-      background-color: black;
-    }
-
-  }
-}
 .round {
   width: 40px;
   height: 40px;
@@ -149,23 +117,27 @@
     top: 50px;
     width: 1000px;
     height: 1100px;
+    z-index: 3;
   }
   &_second {
     left: -140px;
     width: 870px;
     height: 880px;
     top: 110px;
+    z-index: 3;
   }
   &_third {
     left: -110px;
     bottom: 600px;
     width: 850px;
     height: 1020px;
+    z-index: 3;
   }
   &_fourth {
     left: -130px;
     width: 670px;
     height: 780px;
+    z-index: 3;
   }
 }
 
