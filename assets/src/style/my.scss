@@ -447,6 +447,9 @@ li:before {
   justify-content: center;
   margin-top: 3em;
 
+  &.disabled {
+    display: none !important;
+  }
   .owl-dot {
     width: 175px;
     height: 6px;
