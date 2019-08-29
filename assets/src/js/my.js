@@ -25,6 +25,8 @@ $('.new_items .next_prev_icons .carousel-control-prev-icon').click(function () {
     carouselFirst.trigger('prev.owl.carousel');
 });
 $(function (){
+    new WOW().init();
+    $('.dg-container').gallery();
     $('.owl-photos').owlCarousel({
         loop: true,
         dots: true,
