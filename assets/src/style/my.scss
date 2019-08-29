@@ -463,7 +463,16 @@ li:before {
     }
   }
 }
-.gallery img
-{
-
+.menu {
+  .heading-logo {
+    display: none;
+  }
+  .bottom-mob-menu {
+    display: none;
+  }
+  .heading-small {
+    b {
+      display: none;
+    }
+  }
 }

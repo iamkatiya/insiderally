@@ -28,6 +28,12 @@ $('.new_items .next_prev_icons .carousel-control-prev-icon').click(function () {
 $(function (){
     new WOW().init();
     $('.dg-container').gallery();
+    $('.toggle').on('click', function() {
+        $('.menu').addClass('active');
+    });
+    $('.close').on('click', function() {
+        $('.menu').removeClass('active');
+    });
 });
 
 $(document).on('click', function(e) {
