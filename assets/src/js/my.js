@@ -53,3 +53,53 @@ $(document).on('click', function(e) {
         }, 2000);
     }
 });
+
+
+
+
+if ($('.owl-photos1')) {
+    var carouselFirst = $('.owl-photos1').owlCarousel({
+        loop: true,
+        mouseDrag: true,
+        dots: true,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4,
+                margin: 30,
+            }
+        }
+    });
+};
+$('.new_items .next_prev_icons .carousel-control-next-icon').click(function() {
+    carouselFirst.trigger('next.owl.carousel');
+});
+$('.new_items .next_prev_icons .carousel-control-prev-icon').click(function () {
+    carouselFirst.trigger('prev.owl.carousel');
+});
+$(function (){
+    $('.owl-photos1').owlCarousel({
+        loop: true,
+        dots: true,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4,
+                margin: 30,
+            }
+        }
+    });
+});
+

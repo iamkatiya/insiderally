@@ -8,6 +8,7 @@
 {
   width: 100%;
   display: flex;
+  height: 10%;
 }
 .header-text-block
 {
@@ -16,7 +17,9 @@
 .header-bottom
 {
   width: 100%;
-  height: 200px;
+  height: 20%;
+  margin-bottom: 20vh;
+  position: sticky;
 }
 .wrapper {
   width: 100%;
@@ -45,7 +48,6 @@ body {
   background: url("../img/header.jpg") center center;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 100vh;
   margin-top: 0;
   margin-bottom: 0;
   &__nav {
@@ -227,8 +229,8 @@ a {
 
 .map {
   position: relative;
+  width: 1330px;
   height: 750px;
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   &_card {
@@ -242,6 +244,7 @@ a {
 
 .title_right {
   position: relative;
+  margin-right: 100px;
 
   &::before {
     position: absolute;
@@ -249,13 +252,14 @@ a {
     width: 600px;
     height: 7px;
     top: 50px;
-    left: -110px;
+    left: 100px;
     background: black;
   }
 }
 
 .title_left {
   position: relative;
+  margin-left: 100px;
 
   &::before {
     position: absolute;
@@ -291,38 +295,168 @@ a {
 
 .dots {
   position: absolute;
-  left: 1700px;
+  right: -94vw;
   top: 300px;
-}
-
-.scroll {
-  transition: 3s;
 }
 
 .buy_block {
 
   position: absolute;
-  height: 60px;
-  width: 0px;
-  top: 200px;
-  left: 0;
+  height: 35%;
+  width: 100%;
+  left: -100%;
+  top: 80%;
   background-color: white;
   transition: .4s;
 }
 
 .car_photo:hover .buy_block {
-  top: 200px;
-  height: 60px;
-  width: 349px;
+  top: 80%;
+  left: 0;
+  height: 35%;
+  width: 100%;
+  align-items: center;
+}
+.car_photo:hover .car_name {
+
+  justify-content: center;
+
+  margin-left: 26%;
   left: 0;
 }
 
+
 .car_photo {
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
 }
 
 .icon {
   width: 25px;
   height: 25px;
   margin-top: 200px;
+}
+.icon img {
+  width: 25px;
+  height: 25px;
+  margin-top: 100px;
+}
+.modal-content
+{
+  width: 672px;
+  height: 1145px;
+}
+.login {
+  font-size: 21px;
+  width: 100%;
+  font-family: AvenirNextCyr-Light;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140.88%;
+
+  border: 1px solid black;
+  margin-bottom: 29px;
+  padding-left: 2px;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+
+  /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+  padding-left: 22px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: "";
+
+  /*Needed for the line-height to take effect*/
+  display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+  height: 20px;
+  width: 20px;
+
+  border: 1px solid;
+  left: 0px;
+
+  /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+   *to vertically center it.
+   */
+  top: 3px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+  height: 14px;
+  width: 14px;
+  background-color: black;
+  left: 3px;
+  top: 5px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+ul
+{
+  padding: 0;
+}
+li {
+  display: flex;
+  list-style-type: none; /* Убираем маркеры у списка */
+}
+li:before {
+  content: "-"; /* Добавляем в качестве маркера символ */
+}
+.close
+{
+  margin-left: 600px;
+  margin-top: 20px;
+  color: black;
+}
+.owl-dots {
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+
+  .owl-dot {
+    width: 175px;
+    height: 6px;
+    background: rgba(24, 24, 24, 0.3)!important;
+
+    margin: 0 7.5px;
+
+
+    &.active {
+      background: #3f3e3e!important;
+    }
+  }
+}
+.gallery img
+{
+
 }
