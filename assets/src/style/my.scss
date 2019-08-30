@@ -485,7 +485,11 @@ li:before {
     }
   }
 }
-
+.modal-content {
+  .heading-logo {
+    display: none;
+  }
+}
 .button_maxi:hover .button_go_on_big {
   color: #FFFFFF;
 }

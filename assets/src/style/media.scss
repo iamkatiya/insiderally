@@ -588,4 +588,72 @@
       }
     }
   }
+  .modal-content {
+    width: 100%;
+    height: auto;
+
+    .title_modal {
+      font-size: 21px;
+    }
+    .title_mini {
+      margin-bottom: 20px;
+    }
+    .row {
+      margin: 0 10px !important;
+
+      .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .login {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      .form_registr {
+        font-size: 12px;
+      }
+    }
+    .check_block {
+      padding-left: 0 !important;
+      margin: 0 25px !important;
+
+      .checkbox {
+        margin-left: 0 !important;
+      }
+      .form_registr_mini, .form_registr {
+        font-size: 12px;
+      }
+    }
+    .checkbox {
+      padding-left: 0 !important;
+      margin-left: 25px !important;
+      margin-top: 0 !important;
+
+      .form_registr_mini {
+        font-size: 8px;
+      }
+    }
+    .button_go_on {
+      font-size: 12px;
+      margin-bottom: 30px !important;
+    }
+    .button_mini {
+      .button_go_on {
+        font-size: 16px;
+        padding: 14px 50px;
+      }
+    }
+    .heading-logo {
+      color: #000;
+      display: block;
+      font-size: 24px;
+      margin-left: 25px;
+      margin-top: 20px;
+    }
+    button.close {
+      position: absolute;
+      top: 0;
+      right: 25px;
+    }
+  }
 }
