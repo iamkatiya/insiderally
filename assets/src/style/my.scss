@@ -142,7 +142,7 @@ a {
 }
 
 .block_for_header_text {
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .button_one {
@@ -337,7 +337,7 @@ a {
 
 .modal-content {
   width: 672px;
-  height: 72em;
+  min-height: 72em;
 }
 
 .login {
@@ -353,11 +353,11 @@ a {
   padding-left: 2px;
 }
 
-.checkbox input[type="checkbox"] {
+.radio input[type="radio"] {
   display: none;
 }
 
-.checkbox label {
+.radio label {
   position: relative;
   display: inline-block;
 
@@ -365,8 +365,8 @@ a {
   padding-left: 22px;
 }
 
-.checkbox label::before,
-.checkbox label::after {
+.radio label::before,
+.radio label::after {
   position: absolute;
   content: "";
 
@@ -375,7 +375,7 @@ a {
 }
 
 /*Outer box of the fake checkbox*/
-.checkbox label::before {
+.radio label::before {
   height: 20px;
   width: 20px;
 
@@ -389,7 +389,7 @@ a {
 }
 
 /*Checkmark of the fake checkbox*/
-.checkbox label::after {
+.radio label::after {
   height: 14px;
   width: 14px;
   background-color: black;
@@ -398,17 +398,17 @@ a {
 }
 
 /*Hide the checkmark by default*/
-.checkbox input[type="checkbox"] + label::after {
+.radio input[type="radio"] + label::after {
   content: none;
 }
 
 /*Unhide on the checked state*/
-.checkbox input[type="checkbox"]:checked + label::after {
+.radio input[type="radio"]:checked + label::after {
   content: "";
 }
 
 /*Adding focus styles on the outer-box of the fake checkbox*/
-.checkbox input[type="checkbox"]:focus + label::before {
+.radio input[type="radio"]:focus + label::before {
   outline: rgb(59, 153, 252) auto 5px;
 }
 
@@ -513,4 +513,17 @@ li:before {
 
 .button_mini:hover .button_go_on {
   color: #FFFFFF;
+}
+#123
+{
+  height: 10000px;
+}
+#uslovie
+{
+  &:hover
+  {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .4s;
+  }
 }

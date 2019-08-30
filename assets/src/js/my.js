@@ -1,21 +1,23 @@
 $('.owl-photos1').owlCarousel({
-    loop: true,
+
     mouseDrag: true,
-    dots: true,
     nav: false,
     responsive: {
         0: {
             items: 1,
             dots: true,
+            loop: true,
         },
         600: {
             items: 3,
             dots: true,
+            loop: true,
         },
         1000: {
             items: 4,
             margin: 30,
             dots: true,
+            loop: false,
         }
     }
 });
