@@ -307,6 +307,10 @@
   }
 }
 @media (max-width: 650px) {
+  html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
   .container {
     padding: 0 10px;
   }
@@ -389,7 +393,7 @@
       position: absolute;
       overflow: hidden;
       display: inline-block;
-      bottom: -222px;
+      bottom: -210%;
       left: 50%;
       transform: translate(-50%,0);
       width: 90%;
