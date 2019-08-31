@@ -557,8 +557,9 @@
   }
   .map_card {
     top: 0;
-    width: calc(100% + 20px);
-    margin-left: -10px !important;
+    width: 100%;
+    //width: calc(100% + 20px);
+    //margin-left: -10px !important;
   }
   .but {
     display: table;
