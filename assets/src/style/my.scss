@@ -4,6 +4,18 @@
   }
 }
 
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.map_card {
+  padding-bottom: 56.2%;
+  video {
+    position: absolute;
+  }
+}
+
 video {
   width: 100%;
   height: 100%;
@@ -209,6 +221,9 @@ a {
 .footer {
   background-color: black;
   height: 400px;
+  &_description {
+    color: #212529;
+  }
 }
 
 .footer_title {
