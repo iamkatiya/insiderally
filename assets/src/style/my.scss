@@ -535,6 +535,7 @@ li:before {
   transition: .6s;
   padding: 18px;
   background: white;
+  box-shadow: inset 0px 0px 0px 2px rgb(255, 255, 255);
 
   &:hover {
     .button_go_on_big {
@@ -574,6 +575,7 @@ li:before {
   transition: .6s;
   padding: 14px 7px;
   background: white;
+  box-shadow: inset 0px 0px 0px 2px rgb(255, 255, 255);
 
   &:hover {
     .button_go_on {

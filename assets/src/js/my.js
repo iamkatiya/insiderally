@@ -1,12 +1,12 @@
 $('.owl-photos1').owlCarousel({
-
     mouseDrag: true,
     nav: false,
     responsive: {
         0: {
-            items: 1,
+            items: 2,
             dots: true,
             loop: true,
+            margin: 25,
         },
         600: {
             items: 3,
@@ -22,7 +22,7 @@ $('.owl-photos1').owlCarousel({
     }
 });
 
-$('.owl-photos').owlCarousel({
+$('.gallery .owl-photos').owlCarousel({
     loop: true,
     mouseDrag: true,
     dots: true,
@@ -30,7 +30,28 @@ $('.owl-photos').owlCarousel({
     responsive: {
         200: {
             items: 2,
+            margin: 25,
             center: true,
+            dots: true,
+            loop: true
+        },
+        1000: {
+            items: 5,
+            margin: 30,
+            dots: true,
+        }
+    }
+});
+
+$('.friends .owl-photos').owlCarousel({
+    loop: true,
+    mouseDrag: true,
+    dots: true,
+    nav: false,
+    responsive: {
+        200: {
+            items: 2,
+            center: false,
             dots: true,
             loop: true
         },

@@ -114,7 +114,7 @@
     }
   }
   .footer {
-    height: 78px;
+    height: auto;
 
     .container {
       .title_mini_white {
@@ -257,6 +257,9 @@
               display: inline-block;
             }
           }
+          &:last-child {
+            display: none;
+          }
         }
       }
       .bottom-mob-menu {
@@ -318,6 +321,12 @@
     height: 670px;
     background-position: 80% center;
 
+    .menu {
+      .heading-small {
+        margin: 0;
+      }
+    }
+
     .heading-logo {
       font-size: 28px;
 
@@ -349,6 +358,7 @@
     .heading-thin {
       font-size: 12px;
       line-height: 0;
+      margin-top: 0;
     }
     .block_for_header_text {
       margin-top: 53px;
@@ -432,6 +442,19 @@
   .title {
     font-size: 35px;
   }
+  #item-1, #item-2, #item-3, #item-4, #item-5, #item-6 {
+    margin-top: 77px;
+
+    .title {
+      margin-top: 0;
+    }
+    .way_normal {
+      font-size: 12px;
+      margin-top: 0;
+      position: relative;
+      top: -9px;
+    }
+  }
   .title_mini {
     font-size: 13px;
     margin-top: -12px;
@@ -441,6 +464,9 @@
     width: 74px;
   }
   .points {
+    .block_finally {
+      margin-bottom: 55px;
+    }
     .line_bold {
       display: none;
     }
@@ -533,6 +559,8 @@
     margin-top: 45px;
   }
   .partners {
+    margin-bottom: 0;
+
     .col-2 {
       display: none;
 
@@ -556,11 +584,13 @@
   .button_maxi {
     width: 200px;
     height: 42px;
+    margin-top: 20px !important;
 
     .button_go_on_big {
       font-size: 16px;
-      width: 100%;
+      width: 80%;
       padding-top: 11px;
+      letter-spacing: -0.5px;
     }
   }
   .form_go_on {
@@ -670,6 +700,21 @@
       position: absolute;
       top: 0;
       right: 25px;
+    }
+  }
+  .button_mini button {
+    padding: 14px 21px;
+    letter-spacing: 0.7px;
+  }
+  .owl-photos1 {
+    .owl-item {
+      height: 182px;
+      overflow: hidden;
+
+      img {
+        height: 182px;
+        width: auto;
+      }
     }
   }
 }
