@@ -300,6 +300,7 @@ a {
 
 .logo {
   width: 189px;
+  height: 25px;
 }
 
 .map {
@@ -371,6 +372,26 @@ a {
   position: absolute;
   right: -94vw;
   top: 300px;
+  transition: .5s;
+  &:hover
+  {
+    transition: .5s;
+    .right_menu
+    {
+      display: flex;
+      transition: .5s;
+    }
+  }
+}
+.right_menu
+{
+  font-family: nextart_thin;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0.2em;
+  transition: .5s;
+  display: none;
+  font-weight: 700;
 }
 
 .buy_block {
@@ -526,7 +547,16 @@ li:before {
   }
 }
 
-
+.button_maxi
+{
+  width: 400px;
+}
+.button_mini
+{
+  width: 220px;
+  margin-top: 70px;
+  margin-left: 50px;
+}
 
 .button_maxi button {
   align-items: center;
@@ -538,11 +568,12 @@ li:before {
   box-shadow: inset 0px 0px 0px 2px rgb(255, 255, 255);
 
   &:hover {
+
+    background-color: #181818;
+
     .button_go_on_big {
       color: #FFFFFF;
     }
-    background-color: #181818;
-
   }
 }
 
@@ -573,7 +604,7 @@ li:before {
   justify-content: center;
   border: 3px solid #181818;
   transition: .6s;
-  padding: 14px 7px;
+  padding: 14px 30px;
   background: white;
   box-shadow: inset 0px 0px 0px 2px rgb(255, 255, 255);
 

@@ -155,6 +155,8 @@
   font-size: 36px;
   letter-spacing: 0.2em;
   color: #181818;
+  z-index: 100;
+  position: relative;
   &_mini
   {
     font-family: nextart_thin;
@@ -162,6 +164,8 @@
     letter-spacing: 0.2em;
     color: rgba(24, 24, 24, 0.5);
     font-weight: 900;
+    z-index: 100;
+    position: relative;
 
     &_center
     {
@@ -183,12 +187,14 @@
 }
 .way_description
 {
-  font-family: exo-light;
-  font-size: 16px;
-  color: rgba(24, 24, 24, 0.5);
+  font-family: Exo-Thin;
+  font-size: 17px;
+  color: rgba(24, 24, 24, 0.8);
   font-style: normal;
   font-weight: 500;
   line-height: 106%;
+  z-index: 100;
+  position: relative;
 }
 a.but:hover {
   text-decoration: none;
