@@ -556,9 +556,7 @@ li:before {
 }
 .button_mini
 {
-  width: 220px;
-  margin-top: 70px;
-  margin-left: 50px;
+
 }
 
 .button_maxi button {
@@ -605,6 +603,8 @@ li:before {
 .button_mini button {
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   border: 3px solid #181818;
   transition: .6s;
   padding: 14px 30px;

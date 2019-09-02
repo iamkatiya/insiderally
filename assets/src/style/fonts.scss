@@ -160,12 +160,13 @@
   &_mini
   {
     font-family: nextart_thin;
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing: 0.2em;
     color: rgba(24, 24, 24, 0.5);
     font-weight: 900;
     z-index: 100;
     position: relative;
+    white-space: nowrap;
 
     &_center
     {
@@ -256,6 +257,7 @@ a.but:hover {
   letter-spacing: 0.05em;
   color: #181818;
   text-align: center;
+  white-space: nowrap;
 }
 .car_name
 {
