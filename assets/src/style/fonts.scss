@@ -51,6 +51,7 @@
     font-family: nextart_thin;
     word-wrap: normal;
     font-size: 30px;
+    margin-top: -30px;
     color: #FFFFFF;
     &_small
     {
@@ -160,6 +161,15 @@
     {
       text-align: center;
     }
+  }
+  &_normal
+  {
+    font-family: nextart_thin;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    color: rgba(24, 24, 24, 0.5);
+    font-weight: 900;
+    text-align: center;
   }
 
 
