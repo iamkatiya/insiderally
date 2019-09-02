@@ -348,6 +348,33 @@ a {
   position: relative;
 }
 
+
+.block_dots {
+  position: relative;
+  .dots {
+    position: absolute;
+    right: -94vw;
+    top: 300px;
+    transition: .5s;
+    &:hover
+    {
+      .right_menu
+      {
+        display: flex;
+        transition: .5s;
+      }
+    }
+  }
+  .nav-link {
+    &:hover {
+      .dot {
+        background: white;
+      }
+    }
+  }
+}
+
+
 .dot {
   width: 15px;
   height: 15px;
@@ -356,33 +383,9 @@ a {
   transition: .3s;
   &:hover {
     background: white;
-    .dots
-    {
-      right: -74vw;
-    }
   }
 }
 
-
-.block_dots {
-  position: relative;
-}
-
-.dots {
-  position: absolute;
-  right: -94vw;
-  top: 300px;
-  transition: .5s;
-  &:hover
-  {
-    transition: .5s;
-    .right_menu
-    {
-      display: flex;
-      transition: .5s;
-    }
-  }
-}
 .right_menu
 {
   font-family: nextart_thin;
