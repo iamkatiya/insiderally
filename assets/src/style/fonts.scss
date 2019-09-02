@@ -18,6 +18,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'exo_light';
+  src: url('../fonts/exo_light.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'nextart_bold';
   src: url('../fonts/nextart_bold.otf') format('truetype');
   font-weight: normal;
@@ -105,7 +111,7 @@
   text-align: center;
   word-wrap: normal;
   font-size: 72px;
-  color: #000000;
+  color: #181818;
   margin-top: 150px;
   &_modal
   {
@@ -114,7 +120,7 @@
     font-family: nextart_bold;
     text-align: center;
     word-wrap: normal;
-    color: #000000;
+    color: #181818;
   }
   &_mini
   {
@@ -148,7 +154,7 @@
   word-wrap: normal;
   font-size: 36px;
   letter-spacing: 0.2em;
-  color: #000000;
+  color: #181818;
   &_mini
   {
     font-family: nextart_thin;
@@ -166,17 +172,18 @@
   {
     font-family: nextart_thin;
     font-size: 20px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.05em;
     color: rgba(24, 24, 24, 0.5);
     font-weight: 900;
     text-align: center;
+    margin-top: -25px;
   }
 
 
 }
 .way_description
 {
-  font-family: Exo-Thin;
+  font-family: exo-light;
   font-size: 16px;
   color: rgba(24, 24, 24, 0.5);
   font-style: normal;
@@ -219,7 +226,7 @@ a.but:hover {
     display: flex;
     align-items: center;
     letter-spacing: 0.15em;
-    color: black;
+    color: #181818;
   }
 }
 .button_go_on_big
@@ -241,7 +248,7 @@ a.but:hover {
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #181818;
   text-align: center;
 }
 .car_name
@@ -250,7 +257,7 @@ a.but:hover {
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #181818;
   padding: 10px 0;
   text-align: center;
   transition: .4s;

@@ -149,6 +149,51 @@ a {
     transform: rotate(-90deg);
     margin-bottom: 100px;
     margin-top: 30px;
+    &::before
+    {
+      width: 1px;
+      height: 5px;
+      background: #FFFFFF;
+      position: absolute;
+      bottom: -302px;
+      left: -1px;
+      content: '';
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      margin-bottom: 300px;
+      margin-top: 30px;
+    }
+    &::after
+    {
+      width: 1px;
+      height: 5px;
+      background: #FFFFFF;
+      position: absolute;
+      bottom: -302px;
+      left: 1px;
+      content: '';
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      margin-bottom: 300px;
+      margin-top: 30px;
+    }
+  }
+  &_min_left
+  {
+    width: 1px;
+    height: 5px;
+    background: #FFFFFF;
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   &_bold {
     width: 230px;
@@ -227,7 +272,7 @@ a {
 }
 
 .footer {
-  background-color: black;
+  background-color: #181818;
   height: 400px;
   &_description {
     color: #212529;
@@ -277,7 +322,7 @@ a {
     height: 7px;
     top: 50px;
     left: 100px;
-    background: black;
+    background: #181818;
   }
 }
 
@@ -292,7 +337,7 @@ a {
     height: 7px;
     top: 50px;
     left: 650px;
-    background: black;
+    background: #181818;
   }
 }
 
@@ -310,8 +355,13 @@ a {
   transition: .3s;
   &:hover {
     background: white;
+    .dots
+    {
+      right: -74vw;
+    }
   }
 }
+
 
 .block_dots {
   position: relative;
@@ -481,7 +531,7 @@ li:before {
 .button_maxi button {
   align-items: center;
   justify-content: center;
-  border: 3px solid black;
+  border: 3px solid #181818;
   transition: .6s;
   padding: 18px;
   background: white;
@@ -490,7 +540,7 @@ li:before {
     .button_go_on_big {
       color: #FFFFFF;
     }
-    background-color: black;
+    background-color: #181818;
 
   }
 }
@@ -520,7 +570,7 @@ li:before {
 .button_mini button {
   align-items: center;
   justify-content: center;
-  border: 3px solid black;
+  border: 3px solid #181818;
   transition: .6s;
   padding: 14px 7px;
   background: white;
@@ -529,7 +579,7 @@ li:before {
     .button_go_on {
       color: #FFFFFF;
     }
-    background-color: black;
+    background-color: #181818;
 
   }
 }
