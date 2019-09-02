@@ -315,14 +315,24 @@
     padding: 0 10px;
   }
   .header {
-    height: 618px;
+    height: 670px;
+    background-position: 80% center;
 
     .heading-logo {
       font-size: 28px;
+
+      .phone {
+        display: block;
+        font-family: 'nextart_bold';
+        font-size: 10px;
+        line-height: 130%;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+      }
     }
     .navigation-block {
       margin-left: 30px !important;
-      margin-top: 29px;
+      margin-top: 13px;
 
       .col-1 {
         padding: 0;
@@ -341,14 +351,15 @@
       line-height: 0;
     }
     .block_for_header_text {
-      margin-top: 55px;
+      margin-top: 53px;
     }
     .heading-small {
       font-size: 10px;
-      margin-top: 20px;
+      margin: 40px;
     }
     .header-bottom {
-      margin-bottom: 50px;
+      margin-bottom: 89px;
+      width: 86%;
 
       .description {
         .row {
@@ -360,7 +371,7 @@
 
             .heading-small {
               font-size: 8px;
-              margin-top: 0;
+              margin: 0;
               text-align: center;
             }
             .heading-counts {
@@ -393,10 +404,10 @@
       position: absolute;
       overflow: hidden;
       display: inline-block;
-      bottom: -210%;
+      bottom: -183%;
       left: 50%;
       transform: translate(-50%,0);
-      width: 90%;
+      width: 84%;
       padding: 18px 0;
 
       .heading-button {
@@ -555,11 +566,11 @@
   .form_go_on {
     margin-bottom: 57px;
   }
+  .container-map_card {
+    padding: 0 !important;
+  }
   .map_card {
     top: 0;
-    width: 100%;
-    //width: calc(100% + 20px);
-    //margin-left: -10px !important;
   }
   .but {
     display: table;
