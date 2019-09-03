@@ -637,3 +637,9 @@ li:before {
     transition: .4s;
   }
 }
+@media(min-width: 1200px) {
+  #but_left {
+    margin-left: -80px;
+    margin-top: 70px;
+  }
+}
