@@ -318,7 +318,7 @@
     padding: 0 10px;
   }
   .header {
-    height: 670px;
+    height: 640px;
     background-position: 80% center;
 
     .menu {
@@ -414,7 +414,7 @@
       position: absolute;
       overflow: hidden;
       display: inline-block;
-      bottom: -183%;
+      bottom: -157%;
       left: 50%;
       transform: translate(-50%,0);
       width: 84%;
@@ -490,9 +490,27 @@
     .line_bold {
       display: none;
     }
-    .col-4 {
-      margin-top: 0;
+    .col-4, .col-5 {
+      margin-top: 26px;
+      padding: 0 16% !important;
 
+      .way_description {
+        font-size: 10px;
+        margin-bottom: 20px !important;
+        text-align: center;
+      }
+      .description_text {
+        padding-right: 0 !important;
+      }
+      .way_block {
+        width: auto;
+      }
+      .way, .way_mini {
+        text-align: center;
+        width: auto;
+        display: table;
+        margin: auto;
+      }
       .dg-container {
         width: 220px;
         height: 337px;
@@ -500,15 +518,6 @@
         .dg-wrapper {
           zoom: .6;
         }
-      }
-    }
-    .col-5 {
-      margin-top: 26px;
-      padding: 0 16% !important;
-
-      .way_description {
-        font-size: 10px;
-        margin-bottom: 20px !important;
       }
     }
   }
@@ -543,6 +552,10 @@
   .footer {
     .footer_title {
       display: none;
+    }
+    .logo {
+      height: 7px;
+      width: auto;
     }
     .row {
       .col-3 {
@@ -736,5 +749,8 @@
         width: auto;
       }
     }
+  }
+  .points .block_finally .button_mini {
+    margin: 50px auto 0 !important;
   }
 }
