@@ -22,7 +22,7 @@ $('.owl-photos1').owlCarousel({
     }
 });
 
-$('.gallery .owl-photos').owlCarousel({
+$('.owl-photos').owlCarousel({
     loop: true,
     mouseDrag: true,
     dots: true,
@@ -42,29 +42,6 @@ $('.gallery .owl-photos').owlCarousel({
         }
     }
 });
-
-$('.friends .owl-photos').owlCarousel({
-    loop: true,
-    mouseDrag: true,
-    dots: true,
-    nav: false,
-    responsive: {
-        200: {
-            items: 2,
-            center: false,
-            dots: true,
-            loop: true
-        },
-        1000: {
-            items: 5,
-            margin: 30,
-            dots: true,
-        }
-    }
-});
-
-
-
 
 $(function () {
     new WOW().init();
