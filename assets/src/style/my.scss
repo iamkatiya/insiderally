@@ -275,7 +275,8 @@ a {
   background-color: #181818;
   height: 400px;
   &_description {
-    color: #212529;
+    color: white;
+    opacity: .8;
   }
 }
 
@@ -634,5 +635,11 @@ li:before {
     cursor: pointer;
     text-decoration: underline;
     transition: .4s;
+  }
+}
+@media(min-width: 1200px) {
+  #but_left {
+    margin-left: -80px;
+    margin-top: 70px;
   }
 }
