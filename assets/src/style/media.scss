@@ -285,9 +285,6 @@
     }
   }
   #item-2 {
-    .button_go_on {
-      display: none;
-    }
     .col-5 {
       flex: 0 0 60%;
       max-width: 60%;
@@ -377,7 +374,7 @@
             display: none;
           }
           .col-2 {
-            padding: 0 10px;
+            padding: 0 3px;
 
             .heading-small {
               font-size: 8px;
@@ -541,6 +538,13 @@
     }
   }
   #item-2 {
+    .button_mini {
+      button {
+        font-size: 8px;
+        padding: 9px 13px;
+        border: 2px solid #181818;
+      }
+    }
     .way_description {
       font-size: 10px;
     }
@@ -692,7 +696,7 @@
         font-size: 12px;
       }
     }
-    .check_block {
+    .check_block, .radio {
       padding-left: 0 !important;
       margin: 0 25px !important;
 
@@ -743,10 +747,19 @@
     .owl-item {
       height: 182px;
       overflow: hidden;
+      position: relative;
 
+      .car_photo {
+        position: relative;
+        height: 182px;
+      }
       img {
         height: 182px;
         width: auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
       }
     }
   }
