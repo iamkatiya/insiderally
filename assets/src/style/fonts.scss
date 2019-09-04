@@ -219,6 +219,10 @@ a.but:hover {
   justify-content: center;
   padding-top: 12px;
   transition: .6s;
+  &:before
+  {
+
+  }
 }
 .form_registr
 {

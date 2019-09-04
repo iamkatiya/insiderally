@@ -64,3 +64,7 @@ $(document).on('click', function (e) {
     }
 });
 
+$(".form-send-block").on('submit', function () {
+    e.preventDefault();
+    console.log('rabotaet');
+});

@@ -364,6 +364,7 @@
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
+        <form action="">
             <div class="heading-logo">IncideRally</div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -373,17 +374,17 @@
             <div class="row ml-5 mr-5 mt-5">
                 <div class="col-6">
                     <div class="form_registr mb-1">ВАШЕ ИМЯ</div>
-                    <input class="login pl-2" type="text" placeholder="Имя Фамилия"/>
+                    <input class="login pl-2" type="text" id="name" placeholder="Имя Фамилия"/>
                 </div>
                 <div class="col-6">
                     <div class="form_registr mb-1">ВАШ ТЕЛЕФОН</div>
-                    <input class="login pl-2" type="text" placeholder="+7"/>
+                    <input class="login pl-2" type="text" id="phone" placeholder="+7"/>
                 </div>
             </div>
             <div class="row ml-5 mr-5">
                 <div class="col-12">
                     <div class="form_registr mb-1">ВАШ E-MAIL</div>
-                    <input class="login pl-2" type="text" placeholder="email"/>
+                    <input class="login pl-2" type="text" id="email" placeholder="email"/>
                 </div>
             </div>
             <div class="check_block ml-5 pl-3">
@@ -465,12 +466,45 @@
             </div>
             <div class="button_go_on mx-auto mt-4 mb-5">ИТОГО: 20'000 РУБ</div>
             <div class="button_mini mx-auto">
-                <button class="button_go_on" data-toggle="modal" data-target="#exampleModal1">ОТПРАВИТЬ</button>
+                <button class="button_go_on" type="submit">ОТПРАВИТЬ</button>
             </div>
 
+
+        </form>
         </div>
     </div>
 </div>
+
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      <div class="modal-body">
+      <div class="photo_success mx-auto">
+        <img src="img/success.png">
+        </div>
+        <div class="title_modal mt-5 mb-5">СПАСИБО ЗА УЧАСТИЕ</div>
+        <div class="line_bold mx-auto" style="margin-top: 50px; margin-bottom: 100px"></div>
+        <div class="way_description mt-5" style="text-align: center; padding-left: 130px; padding-right: 130px">Вашу заявку скоро рассмотрят и свяжутся с Вами для уточнения деталей пробега.</div>
+        <div class="way_description mt-3" style="text-align: center; padding-left: 130px; padding-right: 130px; margin-bottom: 100px">А пока можете посмотреть как проходили наши пробеги в инстаграме INSIDE.</div>
+        <a class="but" href="https://www.instagram.com/inside__travel/" target="_blank">
+            <div class="button_mini mt-5 mb-5">
+             <button class="button_go_on">
+             НАША ЖИЗНЬ В INSTAGRAM
+              </button>
+              </div>
+              </a>
+              <div class="button_two mx-auto" >
+              <a class="button_go_on">НА ГЛАВНУЮ</a>
+              </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
      aria-hidden="true">
     <div class="modal-dialog" role="document">

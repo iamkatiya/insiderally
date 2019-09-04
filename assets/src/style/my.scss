@@ -239,6 +239,34 @@ a {
   }
 }
 
+.button_two {
+  position: relative;
+  overflow: hidden;
+  width: 140px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 26px;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background-color: #181818;
+    transition: .4s;
+  }
+
+  &:hover {
+    &::before {
+      position: absolute;
+      top: 26px;
+      left: 0;
+      content: "";
+      background-color: #181818;
+    }
+  }
+}
+
 .description {
   position: relative;
   height: 300px;
@@ -438,6 +466,7 @@ a {
   min-height: 72em;
 }
 
+
 .login {
   font-size: 21px;
   width: 100%;
@@ -524,8 +553,7 @@ li:before {
 }
 
 .close {
-  margin-left: 600px;
-  margin-top: 20px;
+
   color: black;
 }
 
@@ -642,4 +670,14 @@ li:before {
     margin-left: -80px;
     margin-top: 70px;
   }
+}
+.photo_success
+{
+  width: 177px;
+  height: 177px;
+  margin-top: 110px;
+}
+#exampleModal3
+{
+  height: 948px;
 }
