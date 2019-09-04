@@ -1,4 +1,4 @@
-<?
+<?php
 $to .= 'weelman93@gmail.com';
 $subject = 'Заявка с сайта inside rally!';
 $name=''; $phone=''; $email=''; $dzen='';
@@ -23,8 +23,7 @@ $message = '
                         . $name . $phone . $email . $dzen .
                     '</body>
                 </html>';
-echo $message;
 $headers = "Content-type: text/html; charset=utf-8 \r\n";
-$headers .= "From: https://insiderally.ru/ <site@insiderally.ru>\r\n";
+$headers .= "From: https://insiderally.ru/ <postmaster@h908208261.nichost.ru>\r\n";
 mail($to, $subject, $message, $headers);
 ?>
