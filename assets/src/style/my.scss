@@ -637,6 +637,69 @@ li:before {
     transition: .4s;
   }
 }
+.modal {
+  &#formResult {
+    color: #181818;
+    font-family: 'Exo-Thin';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 106%;
+
+    .close {
+      font-family: Arial;
+    }
+    h2 {
+      font-size: 21px;
+      line-height: 135%;
+      letter-spacing: 0.2em;
+      font-family: 'nextart_bold';
+      font-weight: normal;
+      position: relative;
+      text-align: center;
+      margin-bottom: 50px;
+      
+      &:after {
+        content: '';
+        display: block;
+        background: #181818;
+        width: 138px;
+        height: 3px;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    p {
+      text-align: center;
+      max-width: 220px;
+      margin: 10px auto;
+    }
+    img {
+      width: 90px;
+      height: 90px;
+      margin: 100px auto 50px;
+    }
+    .but {
+      display: table;
+      margin: 30px auto 0;
+    }
+    .button_mini {
+      button {
+        width: 220px;
+        font-size: 11px;
+        padding: 12.5px 4px;
+        margin-bottom: 0 !important;
+
+        &.outline {
+          border-color: transparent;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}
 @media(min-width: 1200px) {
   #but_left {
     margin-left: -80px;

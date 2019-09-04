@@ -362,7 +362,7 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="heading-logo">IncideRally</div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -465,12 +465,43 @@
             </div>
             <div class="button_go_on mx-auto mt-4 mb-5">ИТОГО: 20'000 РУБ</div>
             <div class="button_mini mx-auto">
-                <button class="button_go_on" data-toggle="modal" data-target="#exampleModal1">ОТПРАВИТЬ</button>
+                <button class="button_go_on" data-toggle="modal" data-target="#formResult">ОТПРАВИТЬ</button>
             </div>
 
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="formResult" tabindex="-1" role="dialog" aria-labelledby="formResultLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="heading-logo">IncideRally</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <img src="img/form-result.png" alt="">
+            <h2>СПАСИБО ЗА<br>УЧАСТИЕ!</h2>
+            <p>Вашу заявку скоро рассмотрят и свяжутся с Вами для уточнения деталей пробега.</p>
+            <p>А пока можете посмотреть как проходили наши пробеги в инстаграме INSIDE.</p>
+            <a href="" class="but">
+                <div class="button_mini" id="but_left" href="https://www.instagram.com/inside__travel/" target="_blank">
+                    <button class="button_go_on" data-toggle="modal" data-target="#exampleModal1">
+                        НАША ЖИЗНЬ В INSTAGRAM
+                    </button>
+                </div>
+            </a>
+            <a href="/">
+                <div class="button_mini" id="but_left">
+                    <button class="button_go_on outline" data-toggle="modal" data-target="#exampleModal1">
+                        НА ГЛАВНУЮ
+                    </button>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
