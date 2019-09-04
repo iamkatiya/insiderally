@@ -49,7 +49,7 @@ $(function () {
     $('.toggle').on('click', function () {
         $('.menu').addClass('active');
     });
-    $('.close').on('click', function () {
+    $('.close, .menu').on('click', function () {
         $('.menu').removeClass('active');
     });
 });
