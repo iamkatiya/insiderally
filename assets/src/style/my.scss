@@ -463,7 +463,7 @@ a {
 
 .modal-content {
   width: 672px;
-  min-height: 72em;
+  padding-bottom: 40px;
 }
 
 
@@ -480,8 +480,9 @@ a {
   padding-left: 2px;
 }
 
-.radio input[type="radio"] {
-  display: none;
+.radio input {
+  position: absolute;
+  opacity: 0;
 }
 
 .radio label {
@@ -525,17 +526,17 @@ a {
 }
 
 /*Hide the checkmark by default*/
-.radio input[type="radio"] + label::after {
+.radio input + label::after {
   content: none;
 }
 
 /*Unhide on the checked state*/
-.radio input[type="radio"]:checked + label::after {
+.radio input:checked + label::after {
   content: "";
 }
 
 /*Adding focus styles on the outer-box of the fake checkbox*/
-.radio input[type="radio"]:focus + label::before {
+.radio input:focus + label::before {
   outline: rgb(59, 153, 252) auto 5px;
 }
 
@@ -553,7 +554,6 @@ li:before {
 }
 
 .close {
-
   color: black;
 }
 
@@ -680,4 +680,16 @@ li:before {
 #exampleModal3
 {
   height: 948px;
+}
+
+.form-send-block {
+  .title_modal {
+    padding-top: 2rem;
+  }
+  .close {
+    position: absolute;
+    right: 0.2em;
+    top: 0;
+    font-size: 40px;
+  }
 }

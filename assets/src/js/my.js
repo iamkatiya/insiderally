@@ -64,7 +64,15 @@ $(document).on('click', function (e) {
     }
 });
 
-$(".form-send-block").on('submit', function () {
+$(".form-send-block").on('submit', function (e) {
     e.preventDefault();
-    console.log('rabotaet');
+    let infoData = $(this).serialize();
+    console.log(infoData);
+    $.ajax({
+        url: "send.php",
+        data: infoData,
+    }).done(function() {
+        $('#exampleModal1').modal('hide');
+        $('#exampleModal3').modal('show');
+    });
 });
