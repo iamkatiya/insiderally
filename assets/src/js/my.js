@@ -66,7 +66,7 @@ $(document).on('click', function (e) {
 
 $(".form-send-block").on('submit', function (e) {
     e.preventDefault();
-    let infoData = $(this).serialize();
+    var infoData = $(this).serialize();
     console.log(infoData);
     $.ajax({
         url: "send.php",
@@ -75,4 +75,13 @@ $(".form-send-block").on('submit', function (e) {
         $('#exampleModal1').modal('hide');
         $('#exampleModal3').modal('show');
     });
+});
+
+$('input[name="dzen"]').on('change', function(){
+    console.log($(this).attr('value'));
+    if ($(this).attr('value')==='Своё Авто') {
+        $('.form-send-block .button_go_on').text("ИТОГО: 20'000 РУБ");
+    } else {
+        $('.form-send-block .button_go_on').text("ИТОГО: 59'000 РУБ");
+    }
 });
