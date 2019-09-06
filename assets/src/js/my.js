@@ -86,3 +86,15 @@ $('input[name="dzen"]').on('change', function(){
         $('.form-send-block .button_go_on').text("ИТОГО: 59'000 РУБ");
     }
 });
+
+var menu = $(".block-dots");
+$(window).scroll(function() {
+    var top = $(this).scrollTop();
+    if ( top >= 800 ) {
+        $(".block_dots").addClass("black")
+
+    }
+    else {
+        $(".block_dots").removeClass("black")
+    }
+});

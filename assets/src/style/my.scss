@@ -379,7 +379,8 @@ a {
 
 
 .block_dots {
-  position: relative;
+  position: fixed;
+  z-index: 1000;
   .dots {
     position: absolute;
     right: -94vw;
@@ -400,6 +401,25 @@ a {
         background: white;
       }
     }
+  }
+}
+
+.block_dots.black
+{
+  .nav-link {
+    &:hover {
+      .dot {
+        background: black;
+
+      }
+    }
+  }
+  .dot{
+    border:1px solid black;
+  }
+  .right_menu
+  {
+    color: #000;
   }
 }
 
