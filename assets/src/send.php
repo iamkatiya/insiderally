@@ -1,5 +1,7 @@
 <?php
-$to .= 'weelman93@gmail.com';
+
+
+$to = 'autoprobeg@gmail.com';
 $subject = 'Заявка с сайта inside rally!';
 $name=''; $phone=''; $email=''; $dzen='';
 if (!empty($_POST["name"])) {
