@@ -379,7 +379,8 @@ a {
 
 
 .block_dots {
-  position: relative;
+  position: fixed;
+  z-index: 1000;
   .dots {
     position: absolute;
     right: -94vw;
@@ -402,6 +403,8 @@ a {
     }
   }
 }
+
+
 
 
 .dot {
