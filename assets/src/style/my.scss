@@ -404,7 +404,24 @@ a {
   }
 }
 
+.block_dots.black
+{
+  .nav-link {
+    &:hover {
+      .dot {
+        background: black;
 
+      }
+    }
+  }
+  .dot{
+    border:1px solid black;
+  }
+  .right_menu
+  {
+    color: #000;
+  }
+}
 
 
 .dot {

@@ -90,13 +90,10 @@ var menu = $(".block-dots");
 $(window).scroll(function() {
     var top = $(this).scrollTop();
     if ( top >= 800 ) {
-        $(".dot").css({"border": "1px solid black"});
-        $(".block_dots .nav-link:hover .dot").css({"background": "black"});
-        $(".right_menu").css({"color": "black", "font-weight": "900"});
+        $(".block_dots").addClass("black")
+
     }
-    if ( top < 800 ) {
-        $(".dot").css({"border": "1px solid white"});
-        $(".block_dots .nav-link:hover .dot").css({"background": "white"});
-        $(".right_menu").css({"color": "white"});
+    else {
+        $(".block_dots").removeClass("black")
     }
 });
