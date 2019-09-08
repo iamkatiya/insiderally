@@ -69,6 +69,7 @@ $(".form-send-block").on('submit', function (e) {
     var infoData = $(this).serialize();
     console.log(infoData);
     $.ajax({
+        type: "POST",
         url: "send.php",
         data: infoData,
     }).done(function() {
