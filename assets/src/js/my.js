@@ -89,7 +89,7 @@ $('input[name="dzen"]').on('change', function(){
 var menu = $(".block-dots");
 $(window).scroll(function() {
     var top = $(this).scrollTop();
-    if ( top >= 800 ) {
+    if ( top >= 700 ) {
         $(".block_dots").addClass("black")
 
     }

@@ -377,28 +377,55 @@ a {
   position: relative;
 }
 
+.dots
+{
+  padding: 10px 20px;
+  transition: 0s;
+}
+
 
 .block_dots {
   position: fixed;
   z-index: 1000;
+  display: block;
+  top: 50vh;
+  right: 0;
+  left: 0;
   .dots {
     position: absolute;
-    right: -94vw;
-    top: 300px;
-    transition: .5s;
+    right: 1vw;
+    transform: translateY(-50%);
+
     &:hover
     {
+      background: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: 10px 0 0 10px;
+      right: 0;
+      transition: 0s;
       .right_menu
       {
         display: flex;
-        transition: .5s;
+        color: black;
+        &:hover
+        {
+          .dot
+          {
+            background: black !important;
+          }
+        }
+
+      }
+      .dot
+      {
+        border: 1px solid black;
       }
     }
   }
   .nav-link {
     &:hover {
       .dot {
-        background: white;
+        background: black;
       }
     }
   }
@@ -409,7 +436,8 @@ a {
   .nav-link {
     &:hover {
       .dot {
-        background: black;
+        background: white;
+        border:1px solid white;
 
       }
     }
@@ -419,7 +447,21 @@ a {
   }
   .right_menu
   {
-    color: #000;
+    color: white !important;
+  }
+  .dots
+  {
+    &:hover
+    {
+      background: #000000;
+      padding: 10px 20px;
+      border-radius: 10px 0 0 10px;
+      right: 0;
+      .dot
+      {
+        border:1px solid white;
+      }
+    }
   }
 }
 
@@ -429,7 +471,7 @@ a {
   height: 15px;
   border: 1px solid white;
   border-radius: 50%;
-  transition: .3s;
+
   &:hover {
     background: white;
   }
