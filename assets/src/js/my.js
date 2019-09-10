@@ -61,6 +61,7 @@ $(document).on('click', function (e) {
         $('html, body').animate({
             scrollTop: $(navLink).offset().top
         }, 2000);
+
     }
 });
 

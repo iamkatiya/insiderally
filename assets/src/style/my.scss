@@ -419,11 +419,20 @@ a {
       .dot
       {
         border: 1px solid black;
+        &:active
+        {
+          background: black !important;
+        }
       }
     }
   }
   .nav-link {
     &:hover {
+      .dot {
+        background: black;
+      }
+    }
+    &:active {
       .dot {
         background: black;
       }
@@ -440,6 +449,7 @@ a {
         border:1px solid white;
 
       }
+
     }
   }
   .dot{
@@ -448,6 +458,7 @@ a {
   .right_menu
   {
     color: white !important;
+
   }
   .dots
   {
